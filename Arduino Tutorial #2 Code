@@ -1,0 +1,31 @@
+
+
+void setup() {
+  // put your setup code here, to run once:
+
+//These things control which pins are set to output:
+pinMode(3,OUTPUT);
+pinMode(5,OUTPUT);
+pinMode(6,OUTPUT);
+pinMode(9,OUTPUT);
+
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+//analogWrite is used instead of digitalWrite so that we can control how much light comes out:
+analogWrite(9,0);
+analogWrite(3,125);
+delay(200); //Change the delay to make it faster or slower(it is in milliseconds):
+analogWrite(3,0);
+analogWrite(5,125);
+delay(200);
+analogWrite(5,0);
+analogWrite(6,125);
+delay(200);
+analogWrite(6,0);
+analogWrite(9,125);
+delay(200);
+}
